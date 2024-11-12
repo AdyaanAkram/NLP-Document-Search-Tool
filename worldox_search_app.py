@@ -11,7 +11,7 @@ submit_button = st.button("Generate Boolean Search Query")
 def generate_boolean_query(modified_input):
     # Define the API endpoint and retrieve the API key securely
     url = "https://api.openai.com/v1/chat/completions"
-    api_key = "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"
+    api_key = "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"
     if not api_key:
         return "API key is missing. Please set it in your environment variables."
 
