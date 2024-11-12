@@ -11,7 +11,7 @@ submit_button = st.button("Generate Boolean Search Query")
 def generate_boolean_query(modified_input):
     # Define the API endpoint and retrieve the API key securely
     url = "https://api.openai.com/v1/chat/completions"
-    api_key = "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"
+    api_key = ("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")
     if not api_key:
         return "API key is missing. Please set it in your environment variables."
 
@@ -24,7 +24,7 @@ def generate_boolean_query(modified_input):
     payload = {
         "model": "gpt-3.5-turbo",
         "messages": [
-            {"role": "user", "content": f"Convert the following natural language query into a Boolean search query: {modified_input}"}
+            {"role": "user", "content": f"Convert the following natural language query into a Boolean search query following Worldox standards: {modified_input}"}
         ],
         "max_tokens": 100
     }
